@@ -52,7 +52,6 @@ unsigned long arch_mmap_rnd(void)
 	unsigned long rnd;
 
 	rnd = (unsigned long)get_random_int() & STACK_RND_MASK;
-
 	return rnd << PAGE_SHIFT;
 }
 
