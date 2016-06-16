@@ -1251,6 +1251,7 @@ static void mmc_wait_data_done(struct mmc_request *mrq)
 	mrq->host->context_info.is_done_rcv = true;
 	wake_up_interruptible(&mrq->host->context_info.wait);
 	spin_unlock_irqrestore(&context_info->lock, flags);
+	context_info->is_done_rcv = true;
 }
 
 static void mmc_wait_done(struct mmc_request *mrq)
