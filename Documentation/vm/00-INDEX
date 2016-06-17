@@ -36,7 +36,5 @@ transhuge.txt
 	- Transparent Hugepage Support, alternative way of using hugepages.
 unevictable-lru.txt
 	- Unevictable LRU infrastructure
-uksm.txt
-    - Introduction to Ultra KSM
 zswap.txt
 	- Intro to compressed cache for swap pages
